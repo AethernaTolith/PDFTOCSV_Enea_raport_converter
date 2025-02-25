@@ -557,6 +557,8 @@ def main():
             hide_index=True
         )
         render_download_button()
-
+    # Add footer
+    st.markdown("---")
+    st.markdown("Stworzone przez Przemysław Suchowiejko - AethernaTolith (2025)")
 if __name__ == "__main__":
     main()
