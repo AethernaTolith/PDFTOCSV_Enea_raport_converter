@@ -215,18 +215,18 @@ def render_sidebar():
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("Get API Key", key="get_key_button"):
-                st.markdown(
-                    f'<a href="https://aistudio.google.com/app/apikey" target="_blank">Get API Key</a>',
-                    unsafe_allow_html=True,
-                )
+            #  Changed this to directly be a link button, styled as a regular button.  Crucially, target="_blank" is needed.
+            st.markdown(
+                f'<a href="https://aistudio.google.com/app/apikey" target="_blank" style="text-decoration: none;"><button style="border: 1px solid #ccc; border-radius: 4px; padding: 4px 8px; background-color: #fff; color: #333; cursor: pointer;">Get API Key</button></a>',
+                unsafe_allow_html=True,
+            )
         
         st.divider()
         
         # Model selection
         model = st.selectbox(
             "Model:",
-            ["gemini-2.0-flash-exp", "gemini-2.0-pro", "gemini-1.5-flash"],
+            ["gemini-2.0-flash","gemini-2.0-flash-lite","gemini-2.0-flash-exp", "gemini-2.0-pro-exp", "gemini-2.0-flash-thinking-exp-01-21"],
             index=0,
             key="model_select"
         )
