@@ -25,10 +25,10 @@ Poniżej znajdziesz instrukcję krok po kroku, jak korzystać z aplikacji PDF to
     ```bash
     pip install streamlit PyPDF2 requests python-dotenv google-generativeai pandas stqdm
     ```
-2.  **Zapisz kod aplikacji** (dostarczony kod Python) do pliku, na przykład `pdf_to_csv_app.py`.
+2.  **Zapisz kod aplikacji** (dostarczony kod Python) do pliku, na przykład `improved-pdf-to-csv.py`.
 3.  **Uruchom aplikację Streamlit** z poziomu terminala, przechodząc do katalogu, w którym zapisałeś plik i wykonując polecenie:
     ```bash
-    streamlit run pdf_to_csv_app.py
+    streamlit run improved-pdf-to-csv.py
     ```
     Aplikacja powinna otworzyć się w Twojej przeglądarce internetowej.
 
